@@ -463,14 +463,15 @@ with tab5:
     
     df_importance = df_importance.sort_values('Importance', ascending=True)
     
-    fig = px.barh(
-        df_importance,
-        x='Importance',
-        y='Feature',
-        title='Feature Importance (Random Forest)',
-        color='Importance',
-        color_continuous_scale='Viridis'
-    )
+    fig = px.bar(
+    df_importance,
+    x='Importance',
+    y='Feature',
+    orientation='h',
+    title='Feature Importance (Random Forest)',
+    color='Importance',
+    color_continuous_scale='Viridis'
+)
     
     st.plotly_chart(fig, use_container_width=True)
 
