@@ -208,7 +208,7 @@ with tab1:
         height=400
     )
     
-    st.plotly_chart(fig, use_container_width=stretch)
+    st.plotly_chart(fig, use_container_width=True)
 
 # Tab 2: Predictions
 with tab2:
