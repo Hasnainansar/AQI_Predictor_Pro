@@ -1,0 +1,103 @@
+# AQI PREDICTOR PRO — .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+secrets.toml
+.streamlit/secrets.toml
+
+# Generated Outputs (PDF Reports)
+outputs/
+*.pdf
+
+# Trained Model Artifacts
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.ckpt
+saved_models/
+checkpoints/
+
+# Data Files (raw & processed)
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.json
+*.parquet
+*.feather
+
+# Jupyter Notebooks (checkpoints)
+.ipynb_checkpoints/
+*.ipynb
+
+# Streamlit Cache
+.streamlit/cache/
+__streamlitcache__/
+
+# OS & Editor Files
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Logs & Temp Files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+logs/
+tmp/
+temp/
+
+# Distribution / Build
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+MANIFEST
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
